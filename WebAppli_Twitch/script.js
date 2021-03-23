@@ -17,6 +17,11 @@ cube_01.position.x = 20;
 cube_01.position.y = 0;
 cube_01.position.z = -50;
 
+const geometrySphere = new THREE.SphereGeometry( 5, 32, 32 );
+const materialSphere = new THREE.MeshBasicMaterial( {color: 0xffff00} );
+const sphere = new THREE.Mesh( geometrySphere, materialSphere );
+scene.add( sphere );
+
 camera.position.z = 5
 
 var ambientLight = new THREE.AmbientLight ( 0xffffff, 0.5)
